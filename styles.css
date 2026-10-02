@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+/* Loading container */
+      #loading {
+        display: none;
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      /* Spinner design */
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #ddd;
+        border-top: 5px solid #3498db;
+        border-radius: 50%;
+
+        /* Animation */
+        animation: spin 1s linear infinite;
+
+        margin: 0 auto;
+      }
+
+      /* Rotation animation */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Output images */
+      #output img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+      }
